@@ -30,19 +30,19 @@ def get_weather_in_Moscow() -> str:
         pressure_mm = fact['pressure_mm']
 
         weather_conditions = {
-            'clear': '☀️ ясно', 'partly-cloudy': '⛅️ малооблачно',
-            'cloudy': '☁️ облачно', 'overcast': '☁️ пасмурно',
-            'light-rain': '🌧 небольшой дождь', 'rain': '🌧 дождь',
-            'heavy-rain': '🌧 сильный дождь', 'snow': '❄️ снег',
-            'snow-showers': '🌨 снегопад'
+            'clear': 'ясно', 'partly-cloudy': 'малооблачно',
+            'cloudy': 'облачно', 'overcast': 'пасмурно',
+            'light-rain': 'небольшой дождь', 'rain': 'дождь',
+            'heavy-rain': 'сильный дождь', 'snow': 'снег',
+            'snow-showers': 'снегопад'
         }
         condition_ru = weather_conditions.get(condition, condition)
 
         result = (
-            f"🌡 *Температура:* {temp}°C, ощущается как {feels_like}°C\n"
-            f"🌥 *Погода:* {condition_ru}\n"
-            f"💨 *Ветер:* {wind_speed} м/с\n"
-            f"☁️ *Давление:* {pressure_mm} мм рт. ст."
+            f"*Температура:* {temp}°C, ощущается как {feels_like}°C\n"
+            f"*Погода:* {condition_ru}\n"
+            f"*Ветер:* {wind_speed} м/с\n"
+            f"*Давление:* {pressure_mm} мм рт. ст."
         )
         return result
 
