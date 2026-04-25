@@ -26,6 +26,10 @@
     │   ├── README.md - Agent_for_weather_in_Moscow - Visual Studio Code 2026-04-25 09-31-48.mp4 # Запись работы агента
 </pre>
 
+## Видео
+https://drive.google.com/file/d/19hZJDMycQowYCCZcoMhAgBBAWZGJbzSi/view?usp=sharing
+Ссылка на гугол диск с видео
+
 ## Запуск
 python -m main
 
